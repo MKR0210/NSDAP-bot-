@@ -17,10 +17,10 @@ const commandFolders = fs.readdirSync("./src/commands");
     client.handleEvents(eventFiles, "./src/events");
     client.handleCommands(commandFolders, "./src/commands");
     client.login(process.env.token)
-})();
-
+});
 client.once("ready", (client) => {
-    console.log(`${client.user.displayAvatarURL()}`)
+    console.log(`${client.user.username}`);
+    
 });
 
 client.on("messageCreate", async (message) => {
@@ -31,9 +31,10 @@ client.on("messageCreate", async (message) => {
             await message.member.timeout(5000)
         return message.reply({content:'Zo heet hij niet meer hij heet nu Mohammed Wahid want hij is bekeerd! alhamdoulillah.'})
         } catch (error) {
-            
+            console.log(error);
         }
         
     }
 
 })
+client.login("MTE5MTEzNDY1MTY2Mjc0MTYxNQ.GLoKuM.VfEjZyjdywfJxf7q41wUVkhykhktTQQH-Fkih0");

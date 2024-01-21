@@ -1,7 +1,7 @@
 {
-  "name": "discordbotbasicsswen",
+  "name": "discordbotmetroyikwildood",
   "version": "1.0.0",
-  "description": "Basic Bot with swen ",
+  "description": "Bot met roy ",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.14.1",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.2",
+    "fs": "^0.0.1-security"
   }
 }
