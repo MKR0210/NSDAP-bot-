@@ -8,7 +8,7 @@ module.exports = {
 .addUserOption(option => option.setName('target').setDescription('The user you would like to kick').setRequire(true))
 .addStringOption(option => option.setName('reason').setDescription('the reason for kicking this user')),
 async execute (interaction, client) {
-
+    
     const kickUser = interaction.option.getUser('target');
     const kickMember = await interaction.guild.members.fetch(kickUser.id);
     const channel = interaction.channel;
